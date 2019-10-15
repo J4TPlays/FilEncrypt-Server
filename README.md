@@ -18,7 +18,7 @@ To be able to read messages, pn one of the windows you must type the word `clien
 To be able to send messages, on the other window you must type the word `messenger`, and simply follow the instructions on screen. Again, once you are connected you will get a notification telling you that you are connected to the server.
 
 ### Generating a key
-To generate a key, you'll need to use the FilEncrypt scripts (available on the FilEncrypt repository). You'll need to select the key generation for the server (it's directly underneath **unSept**). Provided you follow all instructions correctly, everything should work with no issues.
+To generate a key, you'll need to use the FilEncrypt scripts (available on the [FilEncrypt repository](https://github.com/J4TPlays/FilEncrypt)). You'll need to select the key generation for the server (it's directly underneath **unSept**). Provided you follow all instructions correctly, everything should work with no issues.
 
 ## 
 ## Questions you may have
