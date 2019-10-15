@@ -30,15 +30,12 @@ The FilEncrypt server started off as an unencrypted server (version 1.0.X) as a 
 If someone only has access to the channel token or is connected to the same server, or both, then the messages will either come out as gibberish, or will be very badly decrypted. The only way to guarantee the decryption of the messages **completely** is to use the exact same key, which is extremely unlikely given the strength of each key's random generation, even for a low character substitution.
 
 
-
-
+##
 ## Reporting issues
-Feel free to leave comments on the repository, I'll try to respond to them as soon as possible
+Feel free to leave comments on the repository, I'll try to respond to them as soon as possible. I'm most interested in the security of the chat server so if you have any issues, I'll do my best to fix them. :)
 
 
-
-
-
+##
 ## Update Log
 ### 1.0.0
 - Basic
