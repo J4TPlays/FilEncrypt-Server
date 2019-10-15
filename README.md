@@ -30,6 +30,17 @@ The FilEncrypt server started off as an unencrypted server (version 1.0.X) as a 
 
 If someone only has access to the channel token or is connected to the same server, or both, then the messages will either come out as gibberish, or will be very badly decrypted. The only way to guarantee the decryption of the messages **completely** is to use the exact same key, which is extremely unlikely given the strength of each key's random generation, even for a low character substitution.
 
+Just remember that if you do connect to someone's server from a different network, they will have your public IP address. This means they can do whatever they like with it; they can remove you from the server if they wish, or potentially illegal things as well, such as DDoS attacks (information on DDoSing the chat server is below).
+
+
+### Can the chat server be DDoSed?
+Of course. There's no absolute way to ensure your server isn't DDoSed.
+There is, however, a precaution in place for the clients which will ignore messages if they aren't using the same channel token as you, but if they get ahold of your channel token and even some of their information is decrypted by your clients, your chat will be flooded by their nonsense. If you do experience a DDoS / DoS attack, you can simply type the `/newtoken` command into your messenger to completely switch channels. This unfortunately means that you'll have to restart your client connection (message viewer).
+
+
+### Where's the GUI? Command line is horrible!
+Version 3.X should be released by around Christmas 2019 which will include a graphical user interface (GUI). Unfortunately, however, if you are using a version of python that doesn't support Tkinter, then you'll have to use the command line version of the server. But don't worry, because no matter which one you use, there'll always be support for it.
+
 
 ##
 ## Reporting issues
