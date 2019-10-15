@@ -21,6 +21,8 @@ To be able to send messages, on the other window you must type the word `messeng
 To generate a key, you'll need to use the FilEncrypt scripts (available on the FilEncrypt repository). You'll need to select the key generation for the server (it's directly underneath **unSept**). Provided you follow all instructions correctly, everything should work with no issues.
 
 
+
+
 ## Questions you may have
 ### Is it secure?
 The FilEncrypt server started off as an unencrypted server (version 1.0.X) as a test to see what I could do with the server. I then realised I could implement a lot of security into the program, which is where I got the idea of an encrypted chat server. Everything that gets sent to the server is encrypted before it's sent (only on versions 2.X or later), meaning nothing can be understood by people trying to read the data being sent, except for the clients who are:
