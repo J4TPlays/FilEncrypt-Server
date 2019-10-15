@@ -49,5 +49,11 @@ Feel free to leave comments on the repository, I'll try to respond to them as so
 
 ##
 ## Update Log
+
+### 2.3.0
+- Allows messages to be encrypted before they're sent and decrypted when they're received. The only thing the server host will understand is what data is being sent. It will not have a clue what the message is other than that it's been sent by someone, and that it needs to send it out to all of the connected clients.
+- Previous versions of 2.X will not be released as they were very unstable and are unnecessary to fix.
+
+
 ### 1.0.0
-- Basic
+- Extremely basic communication, which doesn't include any kind of encryption / decryption. This version should only be used if you really don't care about people reading your messages. Version 1.0 will not be updated to include encryption / decryption.
