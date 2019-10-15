@@ -27,6 +27,7 @@ The FilEncrypt server started off as an unencrypted server (version 1.0.X) as a 
 1. Using the same key
 2. Connected to the same server
 3. Using the same channel token
+
 If someone only has access to the channel token or is connected to the same server, or both, then the messages will either come out as gibberish, or will be very badly decrypted. The only way to guarantee the decryption of the messages **completely** is to use the exact same key, which is extremely unlikely given the strength of each key's random generation, even for a low character substitution.
 
 
