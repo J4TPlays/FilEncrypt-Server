@@ -39,7 +39,7 @@ There is, however, a precaution in place for the clients which will ignore messa
 
 
 ### Where's the GUI? Command line is horrible!
-Version 3.X should be released by around Christmas 2019 which will include a graphical user interface (GUI). Unfortunately, however, if you are using a version of python that doesn't support Tkinter, then you'll have to use the command line version of the server. But don't worry, because no matter which one you use, there'll always be support for it.
+A public **beta test version** of 3.X is available, and includes a graphical user interface (GUI). Unfortunately, however, if you are using a version of python that doesn't support Tkinter, then you'll have to use the command line version of the server. But don't worry, because no matter which one you use, there'll always be support for it.
 
 
 ##
@@ -50,10 +50,21 @@ Feel free to leave comments on the repository, I'll try to respond to them as so
 ##
 ## Update Log
 
-### 2.3.0
+### Version 3.X
+
+#### 3.0.0
+- Released as a public beta test version. There are bound to be issues with this, so if and when you find issues, please report them as soon as you can.
+- Added a GUI using Tkinter. If your computer does not have Tkinter, you might be forced to use the command line version. Again, any issues, report them to me.
+
+
+
+### Version 2.X
+
+#### 2.3.0
 - Allows messages to be encrypted before they're sent and decrypted when they're received. The only thing the server host will understand is what data is being sent. It will not have a clue what the message is other than that it's been sent by someone, and that it needs to send it out to all of the connected clients.
 - Previous versions of 2.X will not be released as they were very unstable and are unnecessary to fix.
 
+### Version 1.X
 
-### 1.0.0
+#### 1.0.0
 - Extremely basic communication, which doesn't include any kind of encryption / decryption. This version should only be used if you really don't care about people reading your messages. Version 1.0 will not be updated to include encryption / decryption.
