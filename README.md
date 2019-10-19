@@ -24,7 +24,7 @@ To generate a key, you'll need to use the FilEncrypt scripts (available on the [
 ## 
 ## Plans for the future
 ### 4.0
-There will be a lot of changes to version 4.0.
+#### These are some of the updates coming to version 4.0
 - Version 2.X and 3.X are no longer going to be supported. Instead, when new versions of the FilEncrypt server are released, there will be 2 files, called `FE-Server X.X.X.pyw` and `FE-Client X.X.X.pyw`. This will stop confusion when downloading files for your use.
 - FilEncrypt server will be more aware of what's being sent. The connected clients will be given a static UUID (Universal Unique Identifier) that will be unique to them, and when messages are send from the clients, the server will receive the message and check the static UUID against a database. If the static UUID is in the database, then the server will send to every client their message, along with a dynamic UUID given only when the user connects. When the user disconnects, their dynamic UUID will be deleted from the server's database - this will not delete their static UUID. However, if the client's static UUID is not in the server's databasea, the server will completely ignore the message. This will be a huge security fix and should almost completely stop DDoS possibilities.
 - FilEncrypt client will give you a `userdata.info` file when you load up the client for the first time, and will from then on rely on that file so that you don't have to remember all the information to send data to the server. Just remember that the server will be able to remove your static UUID at any time, so if you do give your static UUID out, the server can remove the statid UUID from its database. If someone has your static UUID, you'll have to request a new one from the server host.
