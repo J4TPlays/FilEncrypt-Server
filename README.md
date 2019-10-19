@@ -14,7 +14,7 @@ To host a server, you will need a portforwarded router if you wish to communicat
 
 ### Connecting
 To connect, you need to run two instances of the server script. This basically means that you need to open it twice.
-To be able to read messages, pn one of the windows you must type the word `client`, and simply follow the instructions on screen. Once you are connected, you will get a notification telling you that you are connected.
+To be able to read messages, on one of the windows you must type the word `client`, and simply follow the instructions on screen. Once you are connected, you will get a notification telling you that you are connected.
 To be able to send messages, on the other window you must type the word `messenger`, and simply follow the instructions on screen. Again, once you are connected you will get a notification telling you that you are connected to the server.
 
 ### Generating a key
