@@ -39,7 +39,7 @@ There is, however, a precaution in place for the clients which will ignore messa
 
 
 ### Where's the GUI? Command line is horrible!
-A public **beta test version** of 3.X is available, and includes a graphical user interface (GUI). Unfortunately, however, if you are using a version of python that doesn't support Tkinter, then you'll have to use the command line version of the server. But don't worry, because no matter which one you use, there'll always be support for it.
+A public **beta test version** of 3.X is available, and includes a graphical user interface (GUI) using Tkinter. ~~Unfortunately, however, if you are using a version of python that doesn't support Tkinter, then you'll have to use the command line version of the server. But don't worry, because no matter which one you use, there'll always be support for it.~~ If you are running a version of Python 3 that doesn't support Tkinter, you'll need to find a way of installing it since version 2.4+ will only be used for hosting a server. 
 
 
 ##
@@ -51,6 +51,12 @@ Feel free to leave comments on the repository, I'll try to respond to them as so
 ## Update Log
 
 ### Version 3.X
+
+#### 3.0.1
+- fixed the issue when typing `/dc` where the server would constantly add your previous message. The command will now close down your instance of the server. The `/dc` command **may** be removed in version 3.1, depending on its requirement now that the "X" button will send a disconnect message.
+- added a label to top left displaying the chat server's version
+
+
 
 #### 3.0.0
 - Released as a public beta test version. There are bound to be issues with this, so if and when you find issues, please report them as soon as you can.
