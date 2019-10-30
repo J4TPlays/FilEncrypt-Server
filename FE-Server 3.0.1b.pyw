@@ -46,87 +46,10 @@ user_uuid=False
 user_username=False
 blocked_uuids=[]
 user_data_tags=["uuid","username","blocked"]
-try:
-    user_data_cont=open("userdata.info","r").read().split("\n")
-    print(user_data_cont)
-    for i in range(len(user_data_tags)):
-        try:
-            if user_data_cont[i].split(":")[0]=="uuid":
-                try:
-                    user_uuid=user_data_cont[i].split(":")[1]
-
-
-
-                    if len(user_uuid)!=16:
-                        temp=[]
-                        for i2 in range(len(user_uuid)):
-                            if user_uuid[i2] in allowed_token_chars:
-                                temp.append(user_uuid)
-                            else:
-                                pass
-                        user_uuid=str("%s"%"".join(user_uuid[0:]))
-                        if len(user_uuid)>16:
-                            user_uuid=user_uuid[0:16]
-                        if len(user_uuid)<16:
-                            for i2 in range(16-len(user_uuid)):
-                                user_uuid=str(user_uuid+allowed_token_chars[rd.randint(0,61)])
-                            user_data_cont[i]=str("uuid:"+user_uuid)
-                            print(user_data_cont[i])
-                        
 
 
 
 
-
-
-                except IndexError:
-                    temp=[]
-                    for i2 in range(16):
-                        temp.append(allowed_token_chars[0,61])
-                    temp=str("%s"%"".join(temp[0:]))
-                    user_data_cont[i]=str("uuid:"+temp)
-                    user_uuid=temp
-            elif user_data_cont[i].split(":")[0]=="username":
-                try:
-                    user_username=user_data_cont[i].split(":")[1]
-                except IndexError:
-                    user_username=False
-                    user_data_cont[i]="username:"
-            elif user_data_cont[i].split(":")[0]=="blocked":
-                try:
-                    blocked_uuids=str(str(str("%s"%"\n".join(user_data_cont)).split("{")[1]).split("}")[0]).split(",")
-                except:
-                    print("ERROR !!!!!!!!!! NOOOO")
-
-
-
-
-
-
-        except FileExistsError:
-            print("invalid userdata file oh nooo")
-    
-
-    user_data_cont=str("%s"%"\n".join(user_data_cont[0:]))
-    print("\n")
-    print(user_data_cont)
-    print("\n")
-    """
-    user_data_overwrite=open("userdata.info","w")
-    user_data_overwrite.write("%s"%"\n".join(user_data_cont[0:]))
-    print("written to the files :D")
-    """
-
-
-
-
-except FileNotFoundError:
-    user_data_overwrite=open("userdata.info","w")
-
-
-
-
-# THE ABOVE INFO IS FOR THE FILENCRYPT SERVER VERSION 3.1
 
 
 
