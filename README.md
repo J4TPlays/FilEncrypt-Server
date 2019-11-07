@@ -68,6 +68,10 @@ Feel free to leave comments on the repository, I'll try to respond to them as so
 
 ### Version 3.X
 
+
+#### 3.0.2
+- fixed a fatal issue where the client would crash every time it would find an empty message. Empty messages will now be replaced with `[?]`
+
 #### 3.0.1
 - fixed the issue when typing `/dc` where the server would constantly add your previous message. The command will now close down your instance of the server. The `/dc` command **may** be removed in version 3.1, depending on its requirement now that the "X" button will send a disconnect message.
 - added a label to top left displaying the chat server's version
