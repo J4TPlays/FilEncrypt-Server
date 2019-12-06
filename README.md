@@ -99,4 +99,4 @@ Feel free to leave comments on the repository, I'll try to respond to them as so
 
 
 
-##### Please do not use for illegal purposes.
+##### Please do not use for illegal purposes. I will not be held liable for any illegal activity caused by this Python program.
