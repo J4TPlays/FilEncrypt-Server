@@ -94,3 +94,9 @@ Feel free to leave comments on the repository, I'll try to respond to them as so
 
 #### 1.0.0
 - Extremely basic communication, which doesn't include any kind of encryption / decryption. This version should only be used if you really don't care about people reading your messages. Version 1.0 will not be updated to include encryption / decryption.
+
+
+
+
+
+##### Please do not use for illegal purposes.
