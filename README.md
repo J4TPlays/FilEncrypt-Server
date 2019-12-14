@@ -22,18 +22,17 @@ To generate a key, you'll need to use the FilEncrypt scripts (available on the [
 
 
 ## 
-## Plans for the future
-### 4.0
-#### These are some of the updates coming to FE-Server 4.0 and FE-Client 4.0
-##### Client / Server separation
+## Plans for version 4.0
+### These are some of the updates coming to FE-Server 4.0 and FE-Client 4.0
+#### Client / Server separation
 - Version 2.X and 3.X are no longer going to be supported. Instead, when new versions of the FilEncrypt server are released, there will be 2 files, called `FE-Server X.X.X.pyw` and `FE-Client X.X.X.pyw`. This will stop confusion when downloading files for your use.
-##### Verifying connections
+#### Verifying connections
 - FilEncrypt server will be more aware of what's being sent. The connected clients will be given a static UUID (Universal Unique Identifier) that will be unique to them, and when messages are send from the clients, the server will receive the message and check the static UUID against a database. If the static UUID is in the database, then the server will send to every client their message, along with a dynamic UUID given only when the user connects. When the user disconnects, their dynamic UUID will be deleted from the server's database - this will not delete their static UUID. However, if the client's static UUID is not in the server's databasea, the server will completely ignore the message. This will be a huge security fix and should almost completely stop DDoS possibilities.
-##### Storing server data
+#### Storing server data
 - FilEncrypt client will give you a `userdata.info` file when you load up the client for the first time, and will from then on rely on that file so that you don't have to remember all the information to send data to the server. Just remember that the server will be able to remove your static UUID at any time, so if you do give your static UUID out, the server can remove the statid UUID from its database. If someone has your static UUID, you'll have to request a new one from the server host.
-##### SFTP (Secure File Transfer Protocol)
+#### SFTP (Secure File Transfer Protocol)
 - FE-Server 4.0 will have full capability of transferring files over from one client to another. This will work a little differently to most methods of FTP, as the server will not store anything sent by the user. This means that the server will not actually keep track of what is being sent. It will, however, be able to cap the packets being sent. This means users who are requesting a file will not be able to be sent too much data, resulting in filled storage devices. The server will do this by storing the file's size and the length of the key that is used by the file owner.
-##### Keys
+#### Keys
 - FilEncrypt 3.0 now gives the user access to the new binary keys which will stop encrypting set bytes, and instead will encrypt everything that is in the file. This allows things like images, Word documents, etc. to be encrypted without an issue of crashing the scripts.
 
 
